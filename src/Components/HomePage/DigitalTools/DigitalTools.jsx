@@ -22,7 +22,7 @@ const DigitalTools = ({promiseProduct}) => {
             </div>
 
             {tab === "product" ?
-                <AvailableTools></AvailableTools>
+                <AvailableTools products={products}></AvailableTools>
                 :
                 <Cart></Cart>
             }
