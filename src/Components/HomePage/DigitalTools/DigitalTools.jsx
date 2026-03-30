@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Tab from './Tab/Tab';
+import AvailableTools from './AvailableTools/AvailableTools';
+import Cart from './Cart/Cart';
 
 const DigitalTools = () => {
 
@@ -16,7 +18,11 @@ const DigitalTools = () => {
                 <Tab tab={tab} setTab={setTab}></Tab>
             </div>
 
-            
+            {tab === "product" ?
+                <AvailableTools></AvailableTools>
+                :
+                <Cart></Cart>
+            }
         </div>
     );
 };
