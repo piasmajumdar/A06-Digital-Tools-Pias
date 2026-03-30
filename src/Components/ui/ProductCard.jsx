@@ -15,6 +15,7 @@ const productCard = ({ product, selectedTools, setSelectedTools }) => {
 
         setPurchased(true);
         setSelectedTools([...selectedTools, product]);
+        toast.success("Successfully added to cart")
     }
 
     // console.log(selectedTools);

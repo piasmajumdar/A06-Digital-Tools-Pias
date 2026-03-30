@@ -23,8 +23,8 @@ function App() {
   return (
     <>
       <Navbar
-        selectedTools={selectedTools}
-      ></Navbar>
+        selectedTools={selectedTools}>
+      </Navbar>
       <Banner></Banner>
       <Stats></Stats>
 
