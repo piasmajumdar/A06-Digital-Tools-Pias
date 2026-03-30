@@ -3,8 +3,8 @@ import React from 'react';
 const Tab = ({tab, setTab, selectedTools}) => {
     console.log(selectedTools);
     return (
-        <div className='flex justify-center'>
-            <div className="tabs tabs-box bg-white space-x-2">
+        <div className='flex justify-center my-10'>
+            <div className="tabs tabs-box bg-white space-x-2 border-2 rounded-full border-gray-300">
                 <input
                     type="radio"
                     name="my_tabs_1"

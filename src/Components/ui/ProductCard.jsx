@@ -39,7 +39,7 @@ const productCard = ({ product, selectedTools, setSelectedTools }) => {
 
 
     return (
-        <div className="card w-96 bg-base-100 shadow-sm mx-auto hover:shadow-purple-800 hover:scale-102">
+        <div className="card bg-base-100 shadow-sm mx-auto hover:shadow-purple-800 hover:scale-102">
             <div className="card-body">
                 <div className='flex justify-end'>
                     <span className={`badge badge-soft badge-md rounded-full text-sm py-4 px-5 ${product.tagType === "best-seller" ? "badge-warning" : product.tagType === "new" ? "badge-success" : "badge-primary"}`}>{product.tag}</span>
