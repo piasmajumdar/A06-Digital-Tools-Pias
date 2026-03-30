@@ -20,7 +20,7 @@ const DigitalTools = ({ promiseProduct, selectedTools, setSelectedTools }) => {
                 <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
 
                 {/* Tabs- Product + Cart */}
-                <Tab tab={tab} setTab={setTab}></Tab>
+                <Tab tab={tab} setTab={setTab} selectedTools={selectedTools}></Tab>
             </div>
 
             {tab === "product" ?
@@ -30,7 +30,10 @@ const DigitalTools = ({ promiseProduct, selectedTools, setSelectedTools }) => {
                     setSelectedTools={setSelectedTools}>
                 </AvailableTools>
                 :
-                <Cart></Cart>
+                <Cart
+                    selectedTools={selectedTools}
+                    setSelectedTools={setSelectedTools}>
+                </Cart>
             }
         </div>
     );

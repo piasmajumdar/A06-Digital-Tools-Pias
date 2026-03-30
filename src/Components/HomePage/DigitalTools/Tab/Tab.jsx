@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Tab = ({tab, setTab}) => {
+const Tab = ({tab, setTab, selectedTools}) => {
+    console.log(selectedTools);
     return (
         <div className='flex justify-center'>
             <div className="tabs tabs-box bg-white space-x-2">
@@ -16,7 +17,7 @@ const Tab = ({tab, setTab}) => {
                     type="radio"
                     name="my_tabs_1"
                     className={`tab rounded-full  ${tab === "cart" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : ""} `}
-                    aria-label="Cart(0)"
+                    aria-label={`Cart(${selectedTools.length})`}
                     onClick={()=>setTab("cart")}
                 />
             </div>
