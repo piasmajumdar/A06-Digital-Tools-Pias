@@ -5,13 +5,31 @@ const Navbar = () => {
         <div className='border-b-2 border-b-gray-200'>
             <div className="navbar bg-base-100 container mx-auto flex justify-between">
                 {/* Left */}
-                <div className="flex">
+
+                <div className="flex gap-1">
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul
+                            tabIndex="-1"
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li className='hover:scale-105 cursor-pointer'><a href="">Products</a></li>
+                            <li className='hover:scale-105 cursor-pointer'><a href="">Features</a></li>
+                            <li className='hover:scale-105 cursor-pointer'><a href="">Pricing</a></li>
+                            <li className='hover:scale-105 cursor-pointer'><a href="">Testimonials</a></li>
+                            <li className='hover:scale-105 cursor-pointer'><a href="">FAQ</a></li>
+                            <li className='hover:scale-105 cursor-pointer'><a href="">Login</a></li>
+                        </ul>
+                    </div>
+
                     <a className="btn btn-ghost text-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-transparent bg-clip-text">DigiTools</a>
                 </div>
-                
+
+
                 {/* Middle */}
                 <div>
-                    <ul className='flex justify-between gap-8 font-semibold text-neutral/80'>
+                    <ul className='hidden lg:flex justify-between gap-8 font-semibold text-neutral/80'>
                         <li className='hover:scale-105 cursor-pointer'><a href="">Products</a></li>
                         <li className='hover:scale-105 cursor-pointer'><a href="">Features</a></li>
                         <li className='hover:scale-105 cursor-pointer'><a href="">Pricing</a></li>
@@ -41,11 +59,11 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <button className='hover:text-blue-900 font-semibold cursor-pointer'>Login</button>
-                    <button className='btn rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>Get Started</button>
+                    <button className='hover:text-blue-900 font-semibold cursor-pointer hidden md:inline hover:scale-110'>Login</button>
+                    <button className='btn rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] hidden md:inline hover:scale-105'>Get Started</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
