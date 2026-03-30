@@ -52,7 +52,7 @@ const productCard = ({ product, selectedTools, setSelectedTools }) => {
                     <p className="text-[#627382]">{product.description}</p>
                     <h3 className="text-xl"><span className='font-bold text-2xl text-[#101727]'>${product.price}</span><span className='text-[#627382]'>/{product.period}</span></h3>
                 </div>
-                <ul className="mt-6 flex flex-col gap-2">
+                <ul className="mt-6 flex flex-col flex-1 gap-2">
                     {product.features.map((feature, ind) => {
                         return (
                             <li key={ind}>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tab = ({tab, setTab, selectedTools}) => {
-    console.log(selectedTools);
+    // console.log(selectedTools);
     return (
         <div className='flex justify-center my-10'>
             <div className="tabs tabs-box bg-white space-x-2 border-2 rounded-full border-gray-300">
