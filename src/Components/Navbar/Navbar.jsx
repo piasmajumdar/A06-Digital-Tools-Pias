@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = ({ selectedTools }) => {
     return (
         <div className='border-b-2 border-b-gray-200'>
-            <div className="navbar bg-base-100 max-w-300 mx-auto flex justify-between">
+            <div className="navbar bg-base-100 max-w-3/4 mx-auto flex justify-between">
                 {/* Left */}
 
                 <div className="flex gap-1">

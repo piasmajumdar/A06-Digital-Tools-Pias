@@ -13,7 +13,7 @@ const DigitalTools = ({ promiseProduct, selectedTools, setSelectedTools }) => {
     const [tab, setTab] = useState('product')
 
     return (
-        <div className='py-30 container max-w-300 mx-auto'>
+        <div className='py-30 max-w-3/4 mx-auto'>
             {/* Premium Tools Header */}
             <div className='max-w-130 mx-auto space-y-4 text-center'>
                 <h2 className='font-bold text-5xl'>Premium Digital Tools</h2>

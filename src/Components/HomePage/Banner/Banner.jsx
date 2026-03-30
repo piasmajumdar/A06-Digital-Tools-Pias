@@ -6,7 +6,7 @@ import BadgeCircle from "../../../assets/badge_circle.png"
 const Banner = () => {
     return (
         <div>
-            <div className='max-w-300 mx-auto'>
+            <div className='max-w-3/4 mx-auto'>
                 <div className="py-20 min-h-screen">
                     <div className="flex items-center flex-col gap-10 md:flex-row-reverse justify-between">
                         {/* Banner Right */}
