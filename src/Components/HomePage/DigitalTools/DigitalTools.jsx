@@ -3,10 +3,12 @@ import Tab from './Tab/Tab';
 import AvailableTools from './AvailableTools/AvailableTools';
 import Cart from './Cart/Cart';
 
-const DigitalTools = ({promiseProduct}) => {
-    
+const DigitalTools = ({ promiseProduct, selectedTools, setSelectedTools }) => {
+
     const products = use(promiseProduct)
     // console.log(products)
+
+    // console.log(selectedTools)
 
     const [tab, setTab] = useState('product')
 
@@ -22,7 +24,11 @@ const DigitalTools = ({promiseProduct}) => {
             </div>
 
             {tab === "product" ?
-                <AvailableTools products={products}></AvailableTools>
+                <AvailableTools
+                    products={products}
+                    selectedTools={selectedTools}
+                    setSelectedTools={setSelectedTools}>
+                </AvailableTools>
                 :
                 <Cart></Cart>
             }

@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Banner from './Components/HomePage/Banner/Banner'
 import Stats from './Components/HomePage/Stats/Stats'
 import DigitalTools from './Components/HomePage/DigitalTools/DigitalTools'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 
 const getPromiseProduct = async () => {
   const res = await fetch("toolsData.json");
@@ -15,6 +15,8 @@ function App() {
 
   const promiseProduct = getPromiseProduct();
   // console.log(promiseProduct)
+
+  const [selectedTools, setSelectedTools] = useState([]);
 
   return (
     <>
@@ -27,7 +29,12 @@ function App() {
           <span className="loading loading-infinity loading-xl w-50"></span>
         </div>}>
 
-        <DigitalTools promiseProduct={promiseProduct}></DigitalTools>
+        <DigitalTools
+          promiseProduct={promiseProduct}
+          selectedTools={selectedTools}
+          setSelectedTools={setSelectedTools}>
+
+        </DigitalTools>
       </Suspense>
 
 

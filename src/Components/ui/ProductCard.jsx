@@ -1,9 +1,23 @@
 import React, { useState } from 'react';
 import { IoCheckmark } from 'react-icons/io5';
+import { toast } from 'react-toastify';
 
-const productCard = ({ product }) => {
+const productCard = ({ product, selectedTools, setSelectedTools }) => {
 
     const [purchased, setPurchased] = useState(false);
+
+    const handleBuyNow= (product)=>{
+        const findDuplicate = selectedTools.find(p=> p.id === product.id);
+        if(findDuplicate){
+            toast.error("Already added in Cart")
+            return;
+        }
+
+        setPurchased(true);
+        setSelectedTools([...selectedTools, product]);
+    }
+
+    // console.log(selectedTools);
 
     // console.log(product)
     // {
@@ -50,7 +64,7 @@ const productCard = ({ product }) => {
                 <div className="mt-6">
                     {purchased === false ?
                         <button
-                            onClick={() => setPurchased(true)}
+                            onClick={() => handleBuyNow(product)}
                             className='btn w-full rounded-full text-white font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:scale-105'>
                             Buy Now
                         </button>
