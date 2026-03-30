@@ -8,7 +8,7 @@ const Banner = () => {
         <div>
             <div className='max-w-300 mx-auto'>
                 <div className="py-20 min-h-screen">
-                    <div className="flex items-center flex-col md:flex-row-reverse justify-between">
+                    <div className="flex items-center flex-col gap-10 md:flex-row-reverse justify-between">
                         {/* Banner Right */}
                         <div>
                             <img
