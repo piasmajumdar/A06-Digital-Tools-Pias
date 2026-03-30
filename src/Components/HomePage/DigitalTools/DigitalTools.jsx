@@ -8,7 +8,7 @@ const DigitalTools = () => {
     const [tab, setTab] = useState('product')
 
     return (
-        <div className='py-30 container mx-auto'>
+        <div className='py-30 container max-w-300 mx-auto'>
             {/* Premium Tools Header */}
             <div className='max-w-130 mx-auto space-y-4 text-center'>
                 <h2 className='font-bold text-5xl'>Premium Digital Tools</h2>
