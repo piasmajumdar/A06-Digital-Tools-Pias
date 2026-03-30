@@ -1,15 +1,15 @@
-
-
-import { toast, ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import './App.css'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 
 
   return (
     <>
-    <h2 className='text-red-500 font-bold text-center text-3xl'>PIAS GGgggG</h2>
-    <button className='btn' onClick={()=>toast.success("Successsfully clicked")}>Click Me</button>
+    <Navbar></Navbar>
+
+    
 
     <ToastContainer/>
     </>
