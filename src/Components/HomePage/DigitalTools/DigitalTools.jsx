@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import Tab from './Tab/Tab';
 import AvailableTools from './AvailableTools/AvailableTools';
 import Cart from './Cart/Cart';
 
-const DigitalTools = () => {
+const DigitalTools = ({promiseProduct}) => {
+    
+    const products = use(promiseProduct)
+    // console.log(products)
 
     const [tab, setTab] = useState('product')
 
