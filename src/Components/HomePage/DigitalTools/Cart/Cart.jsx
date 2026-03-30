@@ -1,7 +1,15 @@
 import React from 'react';
 import { FiShoppingCart } from 'react-icons/fi';
+import { toast } from 'react-toastify';
 
 const Cart = ({ selectedTools, setSelectedTools }) => {
+
+    const handleDelete = (product) => {
+        const filteredSelectedTools = selectedTools.filter(selectedTool => selectedTool.id != product.id);
+        setSelectedTools(filteredSelectedTools);
+        toast.success(`${product.name} Deleted Successfully`)
+    }
+
     return (
         <div className='border-2 border-gray-300 rounded-xl p-6 md:p-8 lg:p-10 space-y-2'>
             <h2 className='font-bold text-2xl text-[#101727]'>Your Cart</h2>
@@ -25,7 +33,11 @@ const Cart = ({ selectedTools, setSelectedTools }) => {
                                         <h4 className='font-medium text-[#627382]'>${product.price}</h4>
                                     </div>
                                 </div>
-                                <button className='text-[#FF3980] btn btn-ghost rounded-full'>Remove</button>
+                                <button
+                                    onClick={()=>handleDelete(product)}
+                                    className='text-[#FF3980] btn btn-ghost rounded-full'>
+                                    Remove
+                                </button>
                             </div>
                         })}
                     </div>
