@@ -4,9 +4,12 @@ const Navbar = () => {
     return (
         <div className='border-b-2 border-b-gray-200'>
             <div className="navbar bg-base-100 container mx-auto flex justify-between">
+                {/* Left */}
                 <div className="flex">
                     <a className="btn btn-ghost text-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-transparent bg-clip-text">DigiTools</a>
                 </div>
+                
+                {/* Middle */}
                 <div>
                     <ul className='flex justify-between gap-8 font-semibold text-neutral/80'>
                         <li className='hover:scale-105 cursor-pointer'><a href="">Products</a></li>
@@ -16,6 +19,8 @@ const Navbar = () => {
                         <li className='hover:scale-105 cursor-pointer'><a href="">FAQ</a></li>
                     </ul>
                 </div>
+
+                {/* Right */}
                 <div className="flex space-x-4">
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
