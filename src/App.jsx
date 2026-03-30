@@ -11,16 +11,20 @@ const getPromiseProduct = async () => {
   return res.json();
 }
 
+const promiseProduct = getPromiseProduct();
+
 function App() {
 
-  const promiseProduct = getPromiseProduct();
+
   // console.log(promiseProduct)
 
   const [selectedTools, setSelectedTools] = useState([]);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar
+        selectedTools={selectedTools}
+      ></Navbar>
       <Banner></Banner>
       <Stats></Stats>
 
