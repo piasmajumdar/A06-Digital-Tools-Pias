@@ -8,7 +8,7 @@ const Cart = ({ selectedTools, setSelectedTools }) => {
     const handleDelete = (product) => {
         const filteredSelectedTools = selectedTools.filter(selectedTool => selectedTool.id != product.id);
         setSelectedTools(filteredSelectedTools);
-        toast.success(`${product.name} Deleted Successfully`)
+        toast.error(`${product.name} Deleted Successfully`)
     }
 
     const handleCheckOut = () => {
