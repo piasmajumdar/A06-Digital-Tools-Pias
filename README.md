@@ -1,16 +1,40 @@
-# React + Vite
+# Digital Tools Buy
+A modern and responsive e-commerce web application where users can purchase ai tools and digital tools. This is for students, businessman and professionals. You can find all the tools at very low subscription fee.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a fully responsive website designed for showcasing ai tools and digital products. One can add to cart, remove, buy these tools.This website has been made for user with friendly interaction.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React (Vite)
+- Tailwind CSS
+- DaisyUI
+- JavaScript (ES6)
+- API-JSON data
+- ImageBB (image hosting)
+- React Toastify (notifications)
+- React Icons
+- NPM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Features
+
+### 1. Add to Cart System
+- Users can add products dynamically to the cart
+- Duplicate tool can't be added to cart
+- Real-time cart updates with total price calculation
+
+### 2. Remove from Cart
+- Remove individual items easily
+
+### 3. Checkout Functionality
+- Checkout clears the cart
+
+### 4. Notification 
+- Displays notifications using toast notifications when- Add to cart, Delete, Checkout
+
+
+
