@@ -7,6 +7,7 @@ import DigitalTools from './Components/HomePage/DigitalTools/DigitalTools'
 import { Suspense, useState } from 'react'
 import Steps from './Components/HomePage/Steps/Steps'
 import PricingSection from './Components/HomePage/PricingSection/PricingSection'
+import TransformFooter from './Components/HomePage/TransformFooter/TransformFooter'
 
 const getPromiseProduct = async () => {
   const res = await fetch("toolsData.json");
@@ -45,6 +46,7 @@ function App() {
 
       <Steps></Steps>
       <PricingSection></PricingSection>
+      <TransformFooter></TransformFooter>
 
 
 
