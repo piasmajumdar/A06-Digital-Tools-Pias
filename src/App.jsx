@@ -8,6 +8,7 @@ import { Suspense, useState } from 'react'
 import Steps from './Components/HomePage/Steps/Steps'
 import PricingSection from './Components/HomePage/PricingSection/PricingSection'
 import TransformFooter from './Components/HomePage/TransformFooter/TransformFooter'
+import Footer from './Components/Footer/Footer'
 
 const getPromiseProduct = async () => {
   const res = await fetch("toolsData.json");
@@ -49,6 +50,7 @@ function App() {
       <TransformFooter></TransformFooter>
 
 
+      <Footer></Footer>
 
       <ToastContainer />
     </>
