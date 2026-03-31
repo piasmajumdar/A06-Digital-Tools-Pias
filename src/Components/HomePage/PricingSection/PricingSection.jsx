@@ -5,10 +5,10 @@ const PricingSection = () => {
         <div className='max-w-3/4 mx-auto py-30 space-y-10'>
             <div className='text-center space-y-4'>
                 <h2 className='font-bold text-5xl'>Simple, Transparent Pricing</h2>
-                <p className='text=[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+                <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
             {/* Pricing Card */}
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 <div className="card bg-[#F9FAFC] shadow-sm border-2 border-[#F2F2F2] rounded-2xl">
                     <div className="card-body">
                         <div className="">

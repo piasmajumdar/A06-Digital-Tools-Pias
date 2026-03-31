@@ -22,7 +22,7 @@ const Banner = () => {
                             <h1 className="text-4xl text-[#101727]/90 md:text-4xl lg:text-6xl font-bold">Supercharge Your Digital Workflows</h1>
                             <p className="pb-6 text-[#627382]">
                                 Access premium AI tools, design assets, templates, and productivity
-                                software—all in one place. Start creating faster today.
+                                software—all in one place. Start creating faster today. <br />
                                 Explore Products
                             </p>
                             <div className='flex gap-2 items-center'>

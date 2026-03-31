@@ -9,21 +9,21 @@ const Footer = () => {
             <div className='max-w-3/4 mx-auto space-y-20'>
 
                 {/* Social Part */}
-                <div className='grid grid-cols-9 gap-10'>
+                <div className='flex flex-wrap md:grid grid-cols-9 gap-10'>
 
                     <div className='space-y-4 col-span-2'>
                         <h2 className='text-white text-3xl'>DigiTools</h2>
                         <p className='text-white/80'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                     </div>
 
-                    <div className='grid grid-cols-3 col-span-5 gap-10'>
+                    <div className='flex flex-wrap md:grid grid-cols-3 col-span-5 gap-10'>
                         <div>
                             <h3 className='font-medium text-xl text-white mb-4'>Product</h3>
                             <ul className='space-y-4 text-white/80'>
-                                <li>Integrations</li>
-                                <li>Templates</li>
-                                <li>Pricing</li>
                                 <li>Features</li>
+                                <li>Pricing</li>
+                                <li>Templates</li>
+                                <li>Integrations</li>
                             </ul>
 
                         </div>
@@ -79,7 +79,7 @@ const Footer = () => {
                 </div>
 
                 {/* Copyright Part */}
-                <div className='flex justify-between py-8 border-t-2 border-t-gray-400 text-white/50'>
+                <div className='flex flex-col md:flex-row gap-4 justify-between py-8 border-t-2 border-t-gray-400 text-white/50'>
                     <div>
                         <p>© 2026 Digitools. All rights reserved.</p>
                     </div>
