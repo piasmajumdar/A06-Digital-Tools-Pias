@@ -26,6 +26,8 @@ This project is a fully responsive website designed for showcasing ai tools and 
 - Users can add products dynamically to the cart
 - Duplicate tool can't be added to cart
 - Real-time cart updates with total price calculation
+- Total items will show in Cart logo in Navbar
+- And total price will show in Cart & Navbar
 
 ### 2. Remove from Cart
 - Remove individual items easily
