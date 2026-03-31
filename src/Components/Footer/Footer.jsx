@@ -20,30 +20,30 @@ const Footer = () => {
                         <div>
                             <h3 className='font-medium text-xl text-white mb-4'>Product</h3>
                             <ul className='space-y-4 text-white/80'>
-                                <li>Features</li>
-                                <li>Pricing</li>
-                                <li>Templates</li>
-                                <li>Integrations</li>
+                                <li><a href="">Features</a></li>
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Templates</a></li>
+                                <li><a href="">Integrations</a></li>
                             </ul>
 
                         </div>
                         <div>
                             <h3 className='font-medium text-xl text-white mb-4'>Company</h3>
                             <ul className='space-y-4 text-white/80'>
-                                <li>About</li>
-                                <li>Blog</li>
-                                <li>Careers</li>
-                                <li>Press</li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Press</a></li>
                             </ul>
 
                         </div>
                         <div>
                             <h3 className='font-medium text-xl text-white mb-4'>Resources</h3>
                             <ul className='space-y-4 text-white/80'>
-                                <li>Documentation</li>
-                                <li>Help Center</li>
-                                <li>Community</li>
-                                <li>Contact</li>
+                                <li><a href="">Documentation</a></li>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Contact</a></li>
                             </ul>
                         </div>
 

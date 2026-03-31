@@ -9,7 +9,7 @@ const PricingSection = () => {
             </div>
             {/* Pricing Card */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                <div className="card bg-[#F9FAFC] shadow-sm border-2 border-[#F2F2F2] rounded-2xl">
+                <div className="card bg-[#F9FAFC] shadow-lg border-2 border-[#F2F2F2] rounded-2xl hover:shadow-purple-800">
                     <div className="card-body">
                         <div className="">
                             <h2 className="text-2xl text-[#101727] font-bold">Starter</h2>
@@ -41,7 +41,7 @@ const PricingSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-[#F9FAFC] text-white shadow-sm rounded-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
+                <div className="card bg-[#F9FAFC] text-white shadow-lg rounded-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:shadow-red-800">
                     <div className="card-body">
                         <div className="badge badge-soft bg-[#FEF3C6] badge-warning rounded-full absolute -top-3 left-[50%] -translate-x-1/2 text-[#BB4D00]">Most Popular</div>
                         <div className="">
@@ -82,7 +82,7 @@ const PricingSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-[#F9FAFC] shadow-sm border-2 border-[#F2F2F2] rounded-2xl">
+                <div className="card bg-[#F9FAFC] shadow-lg border-2 border-[#F2F2F2] rounded-2xl hover:shadow-purple-800">
                     <div className="card-body">
                         <div className="">
                             <h2 className="text-2xl text-[#101727] font-bold">Enterprise</h2>
