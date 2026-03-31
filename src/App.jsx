@@ -5,6 +5,7 @@ import Banner from './Components/HomePage/Banner/Banner'
 import Stats from './Components/HomePage/Stats/Stats'
 import DigitalTools from './Components/HomePage/DigitalTools/DigitalTools'
 import { Suspense, useState } from 'react'
+import Steps from './Components/HomePage/Steps/Steps'
 
 const getPromiseProduct = async () => {
   const res = await fetch("toolsData.json");
@@ -40,6 +41,8 @@ function App() {
 
         </DigitalTools>
       </Suspense>
+
+      <Steps></Steps>
 
 
 
